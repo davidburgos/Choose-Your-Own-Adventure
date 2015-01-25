@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.Random;
+
 
 public class MainActivity extends ActionBarActivity {
 
@@ -20,8 +22,18 @@ public class MainActivity extends ActionBarActivity {
         Start_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Alley_intent = new Intent(MainActivity.this, Alley.class);
-                startActivity(Alley_intent);
+
+                Random rn = new Random();
+
+                if(rn.nextBoolean())
+                {
+                    Intent Alley_intent = new Intent(MainActivity.this, Alley.class);
+                    startActivity(Alley_intent);
+                }else{
+                    Intent Room_intent = new Intent(MainActivity.this, Room.class);
+                    startActivity(Room_intent);
+                }
+
             }
         });
     }
