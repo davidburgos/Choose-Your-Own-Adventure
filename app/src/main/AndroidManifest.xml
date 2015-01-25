@@ -20,6 +20,10 @@
             android:name=".Alley"
             android:label="@string/title_activity_alley" >
         </activity>
+        <activity
+            android:name=".Room"
+            android:label="@string/title_activity_room" >
+        </activity>
     </application>
 
 </manifest>
