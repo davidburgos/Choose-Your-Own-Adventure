@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Your Own Adventure</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_start">Start Traveling</string>
+    <string name="title_activity_alley">Alley</string>
+    <string name="text_message">You have ventured down a dark alley, where would you like to go next</string>
+    <string name="text_button_go_left">Go Left</string>
+    <string name="button_text_continue">Continue</string>
+    <string name="button_text_go_right">Go Right</string>
+
+</resources>
