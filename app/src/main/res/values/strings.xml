@@ -14,5 +14,8 @@
     <string name="text_message_roomYou">have entered s room with two doors</string>
     <string name="text_button_enter_door_1">Enter Door 1</string>
     <string name="text_button_enter_door_2">Enter Door 2</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main_activity2">MainActivity2</string>
+    <string name="title_activity_game_over">GameOver</string>
 
 </resources>
