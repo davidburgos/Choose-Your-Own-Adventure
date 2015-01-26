@@ -22,19 +22,22 @@
             android:layout_height="wrap_content"
             android:text="@string/text_button_go_left"
             android:id="@+id/button2"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:onClick="OnClickButtons" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/button_text_continue"
-            android:id="@+id/button3" />
+            android:id="@+id/button3"
+            android:onClick="OnClickButtons" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/button_text_go_right"
-            android:id="@+id/button4" />
+            android:id="@+id/button4"
+            android:onClick="OnClickButtons" />
     </LinearLayout>
 
 

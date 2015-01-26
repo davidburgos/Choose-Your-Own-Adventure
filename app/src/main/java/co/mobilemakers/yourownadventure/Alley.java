@@ -1,5 +1,6 @@
 package co.mobilemakers.yourownadventure;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -11,6 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 import android.widget.Button;
+
+import java.util.Random;
 
 
 public class Alley extends ActionBarActivity {
@@ -25,6 +28,32 @@ public class Alley extends ActionBarActivity {
                     .commit();
         }
 
+    }
+
+    public void OnClickButtons(View v){
+
+        Random rn = new Random();
+
+        if(rn.nextBoolean())
+        {
+            if(rn.nextBoolean()){
+                Intent Room_intent = new Intent(Alley.this, Room.class);
+                startActivity(Room_intent);
+            }else{
+                Intent Alley_intent = new Intent(Alley.this, Alley.class);
+                startActivity(Alley_intent);
+            }
+        }else{
+            Intent GameOverScreen = new Intent(Alley.this, GameOver.class);
+
+            if(rn.nextBoolean()){
+                GameOverScreen.putExtra(Intent.EXTRA_TEXT, Room.LOOSE_MESSAGE);
+            }else{
+                GameOverScreen.putExtra(Intent.EXTRA_TEXT, Room.WIN_MESSAGE);
+            }
+
+            startActivity(GameOverScreen);
+        }
     }
 
 

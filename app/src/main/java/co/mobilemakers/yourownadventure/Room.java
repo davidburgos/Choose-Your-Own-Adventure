@@ -18,8 +18,8 @@ import java.util.Random;
 
 public class Room extends ActionBarActivity {
 
-    private final static String WIN_MESSAGE = "You've reached the Gold!";
-    private final static String LOOSE_MESSAGE = "You've fallen into the pit of despair";
+    final static String WIN_MESSAGE = "You've reached the Gold!";
+    final static String LOOSE_MESSAGE = "You've fallen into the pit of despair";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
